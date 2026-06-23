@@ -19,6 +19,7 @@ function App() {
    {/* <Navbar/> */}
 
 {/* {router} */}
+<div></div>
 <Component1 popy={"nisar"}/>
     </div>
 
