@@ -22,6 +22,10 @@ function App() {
 <div></div>
 <div></div>
 <div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 <Component1 popy={"nisar"}/>
     </div>
 
