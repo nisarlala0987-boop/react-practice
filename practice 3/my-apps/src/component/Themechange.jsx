@@ -2,17 +2,17 @@ import React, { createContext } from 'react'
 import { useState } from 'react'
 
 
-const themeContext =createContext()
+export const themeContext =createContext()
 
-function Themechange({childern}) {
+function Themechange({children}) {
 const[state,setState]=useState("halka")
    
 const theme =()=>{
-if (theme==="halka") {
+if (state==="halka") {
     setState("taiz")
 }
 
-if (theme==="taiz") {
+if (state==="taiz") {
     setState("halka")
 }
 
@@ -21,7 +21,7 @@ if (theme==="taiz") {
 
   return (
   <  themeContext.Provider value={{state,theme}}> 
-  {childern}
+  {children}
   </themeContext.Provider>
   )
 }

@@ -19,18 +19,26 @@
 // export default App
 import React from 'react'
 import { useContext } from 'react'
-import Themechange from './component/themechange'
+import Themechange, { themeContext } from './component/Themechange'
 
 function App() {
-  const [state,theme]=useContext(Themechange)
-  console.log
+const { state, theme } = useContext(themeContext)
+console.log(state)
+const myStyle = {
+  backgroundColor: state === "halka" ? "white" : "black",
+  color: state === "halka" ? "black": "white",
+  minHeight: "100vh",
+  margin: 0,
+  padding: 0
+}
   return (
-    <div style={}>
-      App
-      <button onClick={theme}>change theme</button>
+  
+<div style={myStyle}>
+  <p>hhhh</p>
+  <button onClick={theme}>click</button>
 
+</div>
 
-    </div>
   )
 }
 
