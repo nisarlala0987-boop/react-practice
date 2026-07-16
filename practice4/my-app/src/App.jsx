@@ -19,6 +19,10 @@ backgroundColor: theme === "halka" ? "white" : "black",
 <div></div>
 <div></div>
 <div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
     </div>
   )
 }
