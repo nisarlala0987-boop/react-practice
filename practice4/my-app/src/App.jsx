@@ -13,6 +13,12 @@ backgroundColor: theme === "halka" ? "white" : "black",
   return (
     <div style={myStyle}>App
 <button onClick={changing}>change</button>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
     </div>
   )
 }
